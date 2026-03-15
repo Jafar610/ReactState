@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
-import Test1 from './Components/Test1'
-export default class App extends Component {
-  render() {
-    return (
-      <>
-      <Test1 group = '2' />
-      </>
-    )
-  }
+import React from 'react'
+import Component1 from './Components/contextAPI/Component1'
+export const myContext = React.createContext()
+
+function App() {
+  return (
+    <>
+     <myContext.Provider value={ 'Hello class'}>
+        <Component1 />
+     </myContext.Provider>
+      
+    </>
+  )
 }
+
+export default App
