@@ -11,7 +11,7 @@ let obj = {
 function App() {
   return (
     <>
-     <myContext.Provider value={obj}>
+     <myContext.Provider value={{name: obj.name, age: obj.age, email: obj.email}}>
         <Component1 />
      </myContext.Provider>
       
