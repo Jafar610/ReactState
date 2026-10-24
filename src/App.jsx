@@ -2,6 +2,7 @@ import React from 'react'
 import Component1 from './Components/contextAPI/Component1'
 import Component2 from './Components/contextAPI/Component2'
 import ThemeContext from './Components/contextAPI/ThemeContext'
+import './App.css'
 // export const myContext = React.createContext()
 
 // let obj = {
